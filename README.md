@@ -29,7 +29,12 @@ TODO: Include short and useful examples for package users. Add longer examples
 to `/example` folder. 
 
 ```dart
-const like = 'sample';
+void main() {
+  runApp(ChangeNotifierProvider(
+    create: (context) => AppContext(), // Create context
+    child: const MyApp(),
+  ));
+}
 ```
 
 ## Additional information

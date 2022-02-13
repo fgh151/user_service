@@ -1,7 +1,7 @@
 name: f_login
 description: Flutter login
 version: 0.0.1
-homepage:
+homepage: https://openitstudio.ru
 
 environment:
   sdk: ">=2.15.1 <3.0.0"
@@ -10,12 +10,13 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  shared_preferences: ^2.0.12
+  shared_preferences: ^2.0.13
+  provider: ^6.0.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^1.0.0
+  flutter_lints: ^1.0.4
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

@@ -2,12 +2,9 @@ library f_login;
 
 
 abstract class LoginModel {
-  String? name;
-  late String uuid;
-  double lat = 0.0;
-  double lon = 0.0;
+  String? id;
 
   Map<String, dynamic> toJson();
 
-  Future login(LoginModel model);
+  Future<bool> login(LoginModel model);
 }

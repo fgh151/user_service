@@ -9,6 +9,10 @@ class UserContext extends ChangeNotifier {
     return SharedPreferences.getInstance().then((value) => value.getString('USER'));
   }
 
+  Future<bool> isGuest() {
+    return user().then((value) => value == null);
+  }
+
   static Future logout() {
     return SharedPreferences.getInstance().then((prefs) => prefs.remove('USER'));
   }
